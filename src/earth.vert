@@ -14,8 +14,10 @@ layout(location = 1) out vec2 fs_coords;
 vec2 to_coords(in vec3 p) {
     float x = atan(p.x, p.z) / PI / 2;
     x = x < 0 ? x + 1 : x;
+    x = abs(x) < 0.0001 && (i / 3) % 2 != 0 ? 1 : x;
+    x = abs(x-1) < 0.0001 && (i / 3) % 2 == 0 ? 0 : x;
     return vec2(
-        x == 0 && (i / 3) % 2 != 0 ? 1 : x,
+        x,
         0.5 - asin(p.y) / PI
     );
 }
