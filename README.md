@@ -1,4 +1,4 @@
-# Super-Realistic Flight Simulator
+# Hyper-Realistic Flight Simulator
 A game made for fun and also as an university project. Coded in Zig using almost no libraries (except system APIs and included stb_image).
 
 ## How To Build
@@ -15,7 +15,7 @@ E - toggle camera orientation
 scrolling - change camera position
 
 ## Objective
-I've placed presents in the capital cities. Fly over them with the plane to collect them. At the bottom of the screen is a progress bar.
+I've placed presents in the capital cities. Fly over them with the plane to collect them. There's a progress bar at the bottom of the screen.
 
 ## Additional Credits
 Earth Textures - https://visibleearth.nasa.gov/collection/1484/blue-marble  
